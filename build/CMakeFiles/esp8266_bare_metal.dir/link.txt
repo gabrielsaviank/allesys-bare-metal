@@ -1,0 +1,1 @@
+xtensa-lx106-elf-gcc -Os -Wall -Wextra -ffunction-sections -fdata-sections -nostdlib -Wl,--gc-sections -T /home/gabriel/Documents/Projects/allesys-bare-metal/esp8266.ld -nostartfiles -nostdlib CMakeFiles/esp8266_bare_metal.dir/main.c.o -o esp8266_bare_metal 
