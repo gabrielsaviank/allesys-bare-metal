@@ -27,7 +27,7 @@ tar -xzf xtensa-lx106-elf-gcc8_4_0-esp-2020r3-linux-amd64.tar.gz -C ~/esp
 `
 `export PATH=$PATH:$HOME/esp/xtensa-lx106-elf/bin
 `
-`source ~/.bashrc
+`source ~/.zshrc
 `
 
 ## Compiling
@@ -42,3 +42,6 @@ Make sure to have the bin file, otherwise run
 
 `xtensa-lx106-elf-objcopy -O binary esp8266_bare_metal esp8266_bare_metal.bin
 `
+
+Flash
+`esptool --port /dev/ttyUSB0 write_flash 0x00000 esp8266_bare_metal.bin `
