@@ -44,4 +44,4 @@ Make sure to have the bin file, otherwise run
 `
 
 Flash
-`esptool --port /dev/ttyUSB0 write_flash 0x00000 esp8266_bare_metal.bin `
+`esptool --port /dev/ttyUSB0 write_flash 0x00000 esp8266_bare_metal.bin`
